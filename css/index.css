@@ -34,7 +34,6 @@ nav .content ul {
 	height: 80px;
 	/*background: pink;*/
 }
-
 nav .content ul li {
 	float: left;
 	line-height: 70px;
@@ -72,7 +71,6 @@ header .mask{
 }
 header p{
 	width: 200px;
-	height: 200px;
 	/*background: white;*/
 	/*下面四行是处理文字的*/
 	font-size: 50px;
@@ -117,8 +115,9 @@ header p{
 }
 .professional .skills_box{
 	width: 100%;
+	height:600px;
 	/*此处需要加背景图片*/
-	background-image: url(../img/121.jpg);
+	background-image: url(../img/微信图片_20171110152750.jpg);
 	background-repeat: no-repeat;
 	/*调整背景图缩放*/
 	background-size: 100%;
@@ -136,10 +135,14 @@ header p{
 .professional .skills_box ul li{
 	width: 225px;
 	/*高度随便设置*/
-	height: 400px;
+	height: 500px;
 	/*background: #123456;*/
 	float:left;
 	margin-right: 100px;
+}
+.professional  .skills_box ul li img{
+	   margin-left:60px;
+	   margin-top: 60px;
 }
 .professional .skills_box ul li .icon{
 	width: 225px;
@@ -151,13 +154,14 @@ header p{
 	transform: scale(0.85,0.85);
 	/*过渡,慢慢的变化*/
 	transition: background 0.5s,transform 0.5s;
-	margin-top:100px
+	margin-top:100px;
 	
 }
 .professional .skills_box ul li:hover .icon{
 	/*鼠标移入li后，背景色变深，色块变大*/
 		background: rgba(158,104,102,1);
 			transform: scale(1,1);
+			
 }
 .professional .skills_box ul li h4{
 	text-align: center;
@@ -292,6 +296,12 @@ header p{
 	background: #654321;
 	transition: transform 0.5s;
 }
+.software ul li .rotate h1{
+	color: white;
+	text-align: center;
+	line-height:140px;
+	
+}
 .software ul li .rotate:hover{
 	transform: rotateY(360deg);
 }
@@ -323,6 +333,7 @@ footer .self{
 	overflow: hidden;
 }
 footer .self img{
+	margin-top: -30px;
 
 }
 footer .content{
@@ -330,7 +341,7 @@ footer .content{
 	color: #999;
 	width: 1200px;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 40px;
 	text-align: center;
 	line-height: 1.5em;
 }
